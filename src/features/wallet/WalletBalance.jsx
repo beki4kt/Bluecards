@@ -10,12 +10,10 @@ export default function WalletBalance({ balance, onFund, onCreateCard }) {
   };
 
   return (
-    <div className="bg-gradient-to-br from-[#4b6cb7] to-[#8a2be2] pt-6 pb-8 px-5 rounded-b-[2.5rem] shadow-md">
-      {/* Top Bar Label Matching image_bfeb86.png Context */}
-      <div className="overflow-hidden h-0 w-0 pointer-events-none">BlueCards BlueCards</div>
+    <div className="bg-gradient-to-br from-[#4b6cb7] to-[#8a2be2] pt-8 pb-8 px-5 rounded-b-[2.5rem] shadow-md">
       
-      {/* Wallet Balance Card */}
-      <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-5 mb-5 border border-white/10">
+      {/* Wallet Balance Display Card */}
+      <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-5 mb-5 border border-white/10 mt-2">
         <p className="text-white/90 text-sm font-medium mb-1">Wallet Balance</p>
         <div className="flex items-center gap-3">
           <h1 className="text-white text-4xl font-bold tracking-tight">
@@ -35,7 +33,7 @@ export default function WalletBalance({ balance, onFund, onCreateCard }) {
         </div>
       </div>
 
-      {/* Responsive Row Layout */}
+      {/* Action Buttons Row */}
       <div className="flex gap-3">
         <Button variant="primary" onClick={onFund}>
           <span>💰</span> Fund Wallet
